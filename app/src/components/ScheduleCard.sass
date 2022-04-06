@@ -1,0 +1,57 @@
+@use '../index' as *
+
+.scheduleCard
+    background-color: $milk
+    border: 1px solid $border-color
+    border-radius: 0.5rem
+    display: flex
+    flex-direction: column
+    padding: 0.5rem
+    gap: 0.1rem
+    box-shadow: 2px 2px 3px 1px $gray
+    min-height: 140px
+    font-size: 12px
+
+.scheduleCard__info
+    width: 75%
+
+.scheduleCard__buttons
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    width: 25%
+
+.scheduleCard__description
+    font-size: 12px
+    font-weight: 500
+    margin-bottom: 0.8rem
+    text-transform: uppercase
+
+.scheduleCard__info
+    display: flex
+    width: 100%
+    gap: 1rem
+    font-size: 11px
+    align-items: center
+
+.scheduleCard__button
+    fill: $secondary-color
+    width: 1.2rem
+    max-width: 30px
+
+.scheduleCard__icon
+    width: 1rem
+    max-width: 30px
+    fill: #243831
+
+.schedulaCard__complete
+    font-size: 7px
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 0.3rem
+    margin-left: 1.5rem
+
+.scheduleCard__completed
+    justify-content: end

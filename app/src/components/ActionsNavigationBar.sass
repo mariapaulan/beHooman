@@ -1,0 +1,25 @@
+@use '../index' as *
+    
+.navigationActions 
+    border-bottom: 1px solid $primary-color
+    margin-top: 0.5rem
+
+.navigationActions__list 
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    justify-content: space-around
+    align-items: center
+
+.navigationActions__listItem 
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0.3rem
+
+.navigationActions__icon 
+    width: 1.7rem
+    fill: $orangeSkin
+    max-width: 30px
+
+.navigationActions__icon-active
+    fill: $deepOrange

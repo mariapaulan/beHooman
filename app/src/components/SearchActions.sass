@@ -1,0 +1,44 @@
+@use '../index' as *
+
+.searchActions__form
+    display: flex
+    gap: 0.5rem
+    margin: 0 1rem
+
+.searchActions__fieldset
+    display: grid
+    width: 100%
+    grid-template-columns: repeat(2,1fr)
+    align-items: center
+    gap: 0.5rem
+
+.searchActions__input
+    grid-column: 1/3
+
+.searchActions__button
+    width: 2rem
+    display: flex
+    padding-top: 0.5rem
+    align-items: flex-start
+
+.searchActions__icon
+    width: 2rem
+    max-width: 30px
+    fill: $secondary-color
+
+.searchActions__select
+    display: flex
+    align-items: center
+    width: 100%
+
+.searchActions__select select
+    background: $milk
+    margin: 0 0.3rem
+    padding: 0.1rem 0.3rem
+    border-radius: 5px
+    border-bottom: solid $secondary-color
+
+.searchActions__select-label
+    width: 20%
+    fill: #243831
+    max-width: 30px

@@ -1,0 +1,41 @@
+@use '../index' as *
+
+.navigationMenu
+    width: 100%
+    height: 56px
+    position: fixed
+    bottom: 0
+    overflow: hidden
+    background-color: $background-color
+    border-top: 0.01rem solid $border-color
+
+.navigationMenu__list
+    display: flex
+    justify-content: space-around
+    height: 100%
+
+.navigationMenu__listItem
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    padding: 0.7rem
+
+    .navigationMenu__link 
+        display: flex
+        flex-direction: column
+        text-decoration: none
+        font-size: 10px
+        align-items: center
+        font-weight: 400
+        height: 100%
+        justify-content: space-around
+        color: $primary-color
+
+.navigationMenu__icon
+    fill: $primary-color
+    width: 20px
+
+.navigationMenu__icon-active
+    fill: $secondary-color

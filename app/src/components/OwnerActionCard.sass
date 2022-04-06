@@ -1,0 +1,45 @@
+@use '../index' as *
+
+.ownerActionCard
+    background-color: $milk
+    border: 1px solid $border-color
+    border-radius: 0.5rem
+    display: flex
+    padding: 0.5rem
+    gap: 1rem
+    box-shadow: 2px 2px 3px 1px $gray
+    min-height: 100px
+
+.ownerActionCard__info
+    width: 75%
+    gap: 0.2rem
+    display: flex
+    flex-direction: column
+
+.ownerActionCard__buttons
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    width: 25%
+
+.ownerActionCard__bottomButtons
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 0.3rem
+
+.ownerActionCard__title
+    font-size: 12px
+    margin-bottom: 0.5rem
+    font-weight: 500
+    text-transform: uppercase
+
+.ownerActionCard__text
+    font-size: 12px
+
+.ownerActionCard__icon
+    fill: $secondary-color
+    width: 1.2rem
+    max-width: 30px

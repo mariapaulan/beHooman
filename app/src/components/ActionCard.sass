@@ -1,0 +1,43 @@
+@use '../index' as *
+
+.actionCard
+    background-color: $milk
+    border: 1px solid $border-color
+    border-radius: 0.5rem
+    display: flex
+    padding: 0.5rem
+    gap: 1rem
+    box-shadow: 2px 2px 3px 1px $gray
+    min-height: 100px
+
+.actionCard__info
+    width: 75%
+
+.actionCard__buttons
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    width: 25%
+
+    .actionCard__author
+        font-size: 9px
+    
+    .actionCard__topButtons
+        display: flex
+        flex-direction: column
+        gap: 0.3rem
+
+.actionCard__title
+    font-size: 12px
+    margin-bottom: 1rem
+    font-weight: 500
+    text-transform: uppercase
+
+.actionCard__text
+    font-size: 12px
+
+.actionCard__scheduleIcon
+    fill: $orangeSkin
+    width: 1.5rem
+    max-width: 30px

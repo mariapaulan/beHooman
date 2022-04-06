@@ -1,0 +1,47 @@
+@use '../index' as *
+
+.userProfile
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 2rem
+    gap: 0.2rem
+    box-shadow: 2px 2px 3px 1px $gray
+    background-color: $milk
+    border-radius: 1rem
+    padding: 1rem
+    font-size: 12px
+
+.userProfile__icon
+    max-width: 100px
+    width: 5rem
+    fill: $orangeSkin
+    margin-bottom: 0.5rem
+
+.userProfile__title
+    border: 1px solid $secondary-color
+    padding: 0.1rem 1.3rem
+    border-radius: 1.2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 1rem
+    min-width: 130px
+
+.userProfile__toggle
+    width: 1.5rem
+
+.userProfile__completed
+    background-color: $secondary-color
+    color: $milk
+    border-radius: 2rem 
+    padding: 0.3rem 0.7rem
+    min-width: 130px
+
+.userProfile__createdTitle
+    width: 100%
+    font-size: 16px
+    font-weight: 400
+    margin-top: 2rem
+    margin-bottom: 1rem
