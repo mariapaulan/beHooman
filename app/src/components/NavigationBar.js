@@ -14,7 +14,7 @@ export const NavigationBar = ({ onHome, onSchedules, onCommunity, onProfile }) =
             <ul className='navigationMenu__list'>
                 <li className='navigationMenu__listItem'>
                     <Link className='navigationMenu__link' onClick={onHome}>
-                        <HappyIcon className={`navigationMenu__icon ${location === '/' && 'navigationMenu__icon-active'}`} />
+                        <HappyIcon className={`navigationMenu__icon ${(location === '/' || location.includes('search')) && 'navigationMenu__icon-active'}`} />
                         Inicio
                     </Link>
                 </li>
